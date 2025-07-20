@@ -1,0 +1,61 @@
+.CardSetTypeA.category {
+    margin-top: 1.5rem;
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: .5rem;
+    }
+    
+    .card-list{
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .content-card-btn {
+            width: 100%;
+            min-width: 8rem;
+            padding: 1rem;
+            background: var(--sub-accent);
+            border-radius: 7px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+            user-select: none;
+            cursor: pointer;
+            color: white;
+            white-space: nowrap;
+            
+
+            &:hover {
+                filter: brightness(.9);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 652px) {
+    .category {
+        .title {
+            font-size: 1.2rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .category {
+        .card-list{
+            .content-card-btn {
+                padding: .8rem;
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

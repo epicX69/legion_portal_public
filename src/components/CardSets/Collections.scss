@@ -1,0 +1,220 @@
+.collections {
+    width: 100%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+
+    .titleBar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0rem;
+        margin-top: .5rem;
+        line-height: 0rem;
+
+        & > p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .actions {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            i {
+                padding: .5rem;
+                background: var(--sub-background);
+                display: grid;
+                place-content: center;
+                border-radius: 100px;
+                font-weight: bolder;
+                font-size: 1.5rem;
+                width: 1.6rem;
+                height: 1.6rem;
+                transition: transform 200ms, color 200ms, background 200ms;
+          
+                &:hover {
+                  transform: scale(1.1);
+                  background: var(--text);
+                  color: var(--background);
+                }
+          
+                &:active {
+                  transform: scale(.7);
+                }
+              }
+
+              div {
+                cursor: pointer;
+                font-weight: 600;
+                color: var(--sub-accent);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+              }
+        }
+    }
+
+
+    .card-list {
+        display: flex;
+        gap: .7rem;
+        padding: 3rem 1rem;
+        padding-top: 1.2rem;
+        margin: -1rem;
+        padding-bottom: 3rem;
+        overflow-y: unset;
+        max-width: 100%;
+        overflow-x: auto;
+        margin-bottom: -3rem;
+
+        // overflow: unset;
+  
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        .collection-card {
+            position: relative;
+            min-width: 14rem;
+            aspect-ratio: 1 / 1 !important;
+            background: var(--sub-background);
+            border-radius: 7px;
+            outline: 4px solid transparent;
+            text-decoration: none;
+            color: white;
+        
+            background-position: center;
+            background-size: cover;
+            // overflow: hidden;
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            user-select: none;
+            border: 2px solid var(--sub-outline);
+        
+            .cover {
+                width: 100%;
+                height: calc(100% - 2rem);
+                background-size: cover;
+                background-position: center;
+                 border-radius: 7px;
+            }
+
+            .title {
+                color: var(--text);
+                font-weight: 600;
+            }
+
+            button {
+                background: var(--sub-outline);
+                border: 0;
+                color: var(--text);
+                padding: .5rem 1rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: .5rem;
+                border-radius: 7px;
+                cursor: pointer;
+                font-family: var(--font);
+                letter-spacing: 1px;
+                font-size: .9rem;
+                transition: background 300ms ease;
+
+                &:hover {
+                    background: var(--sub-accent);
+                }
+            }
+
+
+
+        
+
+
+        }
+
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 652px) {
+    .collections {
+        margin-top: 1rem;
+
+        & > p, .title {
+            font-size: 1.2rem;
+        }
+
+        .titleBar {
+            & > p {
+                font-size: 1.2rem;
+            }
+    
+            .actions {
+                i {
+                    display: none;
+                    font-size: 1.1rem;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                  }
+    
+                div {
+                    font-size: .9rem;
+                }
+            }
+        }
+    
+        .card-list {
+            display: flex;
+            gap: .7rem;
+            padding: 3rem 1rem;
+            padding-top: 1.2rem;
+            margin: -1rem;
+            padding-bottom: 3rem;
+            overflow-y: unset;
+            max-width: 100%;
+            overflow-x: auto;
+            margin-bottom: -3rem;
+    
+            // overflow: unset;
+      
+    
+            &::-webkit-scrollbar {
+                display: none;
+            }
+    
+    
+            .collection-card {
+                min-width: 10rem;
+                gap: .7rem;
+                padding: .7rem;
+
+    
+                .title {
+                    font-size: .9rem;
+                }
+    
+                button {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}

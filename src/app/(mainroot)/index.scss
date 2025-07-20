@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background: #1D1D1D;
+    --sub-background: #242424de;
+    --sub-background2: #303030de;
+    --sub-outline: #444;
+  
+    --accent: #ffb502;
+    --light-accent: #1373E6;
+    --sub-accent: #3a8ef2;
+    --blur: blur(10px);
+  
+    --text: #FFFFFF;
+    --card-border: #FFFFFF;
+    --font: 'Poppins', sans-serif;
+  
+    --swiper-theme-color: var(--light-accent) !important;
+    --swiper-pagination-bullet-inactive-color: var(--text) !important;
+    --exp: #ffffff21;
+  }
+
+[data-theme="dark-orange"] {
+    --background: #0E0E0E;
+    --sub-background: #161616;
+    --sub-background2: #202020;
+    --sub-outline: #1C1C1C;
+
+    --accent: #fd8d2b;
+    --light-accent: #FFA452;
+    --sub-accent: #5297FF;
+
+    --text: #FFFFFF;
+    --card-border: #FFFFFF;
+    --blur: unset;
+}
+  
+[data-theme="white"] {
+    --background: #FFFFFF;
+    --sub-background: #f7f7f7;
+    --sub-background2: #e9e9e9;
+    --sub-outline: #eeeeee;
+
+    --accent: #ff7700;
+    --light-accent: #ff8215;
+    --sub-accent: #5297FF;
+
+    --text: #0E0E0E;
+    --card-border: var(--accent);
+    --blur: unset;
+}
+
+[data-theme="white-2"] {
+    --background: #CDCDCD;
+    --sub-background: #e4e4e4;
+    --sub-background2: #d6d6d6;
+    --sub-outline: #b6b6b6;
+
+    --accent: #4340ff;
+    --light-accent: #6f6dff;
+    --sub-accent: #4340ff;
+
+    --text: #0E0E0E;
+    --card-border: var(--accent);
+    --blur: unset;
+}
+
+[data-theme="dark-green"] {
+    --background: #242424;
+    --sub-background: #282934;
+    --sub-background2: #343746;
+    --sub-outline: #393a4b;
+
+    --accent: #33c017;
+    --light-accent: #33c017;
+    --sub-accent: #77aeff;
+
+    --text: #FFFFFF;
+    --card-border: #FFFFFF;
+    --blur: unset;
+}
+
+[data-theme="deepblue"] {
+    --background: #0a0a2b;
+    --sub-background: #1b1b47;
+    --sub-background2: #29296e;
+    --sub-outline: #262664;
+
+    --accent: #7790ff;
+    --light-accent: #6b86ff;
+    --sub-accent: #4a6bff;
+
+    --text: #FFFFFF;
+    --card-border: #FFFFFF;
+    --blur: unset;
+}
+
+[data-theme="pinky"] {
+    --background: #F0AAD8;
+    --sub-background: #efbadc;
+    --sub-background2: #e2b0d0;
+    --sub-outline: #f2a0d5;
+
+    --accent: #9e0d6e;
+    --light-accent: #532243;
+    --sub-accent: #5e1c48;
+
+    --text: #0A0A0A;
+    --card-border: #db42a8;
+    --blur: unset;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: var(--font);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

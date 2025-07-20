@@ -1,0 +1,107 @@
+footer {
+    // margin-left: 4.5rem;
+    // width: calc(100% - 4.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    // background: red;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    background: var(--sub-background);
+    width: calc(100% - 2rem);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-radius: 7px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0rem;
+
+        img {
+            width: 3.5rem;
+            height: auto;
+        }
+
+        .logo-name {
+            font-weight: 700;
+            font-size: 2.2rem;
+        }
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        & > div {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .version {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        .type {
+            display: grid;
+            place-content: center;
+            padding: .15rem 0rem;
+            padding-left: 7px;
+            background: var(--sub-background2);
+            text-transform: uppercase;
+            letter-spacing: 7px;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 4px;
+            font-size: .6rem;
+        }
+        .no {
+            position: relative;
+            font-size: .8rem;
+            font-family: monospace;
+
+            &::after {
+                position: absolute;
+                left: -1rem;
+                content: '';
+                width: 1px;
+                height: 15px;
+                background: var(--text);
+                transform: rotate(15deg);
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 652px) {
+    footer {
+        .logo {
+            img {
+                width: 2.5rem;
+            }
+    
+            .logo-name {
+                font-size: 1.8rem;
+            }
+        }
+    
+        .footer-links {
+            gap: 1rem;
+        }
+    }
+    
+}
